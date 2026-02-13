@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title><%= title %></title>
+</head>
+<body>
+  <nav class="navBar">
+    <div class="navItem">
+      <h1>Mini Message Board</h1>
+    </div>
+    <div class="navItem"><a href="/new">Add Message</a></div>
+  </nav>
+  <main>
+    <div class="messages">
+      <h1>Message</h1>
+      
+      <div class="message">
+        <p class="text"><%= message.text %></p>
+        <h3 class="user"><%= message.user %></h3>
+        <p class="added"><%= message.added %></p>
+      </div>
+      
+    </div>
+  </main>
+</body>
+</html>
